@@ -71,4 +71,9 @@ Produces the figure on collective noise with different noise parameters between 
 - diffmu - makes Fig 19c in SM (fidelity for deviating mu between the two photons)
 - diffOmega - makes Fig 19b in SM (fidelity for deviating Omega between the two photons)
 
+---
+
+### AllKeyRates_SimulatedData.xlsx
+Excel file containing all the data simulated by the security analysis for varying parameters.
+
 
