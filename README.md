@@ -101,4 +101,8 @@ Excel file containing all the data simulated by the security analysis for varyin
 - Wang_U_fine - Wang under a unitary operation, arranged as a heatmap array, over the range 0 to pi/2
 - Wang_U_fine_params - the parameter vectors used for the theta and phi values
 
+---
+
+### TFQKD_KeyRates.xlsx
+Excel file containing the simulated points of the analytical expression for the key rate of TF-QKD in a lossy channel. Used to add the TF-QKD plot to the loss comparison.
 
