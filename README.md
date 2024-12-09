@@ -119,6 +119,13 @@ Our key rate analysis used the Version 1 of the Open QKD Security package, devel
 
 ### Presets
 
+- BB84_asymptotic.m - file for BB84 key rate analysis. The BB84 key rate is analysed using the parameters theta and phi, with loss scaling eta^1. The same file is used for our protocol, using only the parameters eta0 and delta for the amplitude damping and decoherence channel, and loss scaling eta^2.
+- Boileau3_asymptotic.m - file for the key rate analysis of the 3-photon protocol from Boileau et al. (2004).
+- Boileau4_asymptotic.m - file for the key rate analysis of the 4-photon protocol from Boileau et al. (2004).
+- LiDep_asymptotic.m - file for the key rate analysis of the dephasing-only protocol from Li et al. (2008).
+- LiRot_asymptotic.m - file for the key rate analysis of the rotation-only protocol from Li et al. (2008).
+- Wang05_asymptotic.m - file for the key rate analysis of the protocol from Wang (2005).
+
 ---
 
 ### Protocols
