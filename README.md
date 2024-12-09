@@ -63,3 +63,12 @@ Produces the figure on collective noise with different noise parameters between 
 
 ---
 
+### UnequalFBSmodel.py
+Produces the figure on collective noise with different noise parameters between the two photons for the FBS model.
+- difftheta - makes Fig 19d in SM (fidelity for deviating theta between the two photons)
+- diffepsilon - makes Fig 19a in SM (fidelity for deviating epsilon between the two photons)
+- diffphi - makes Fig 19e in SM (fidelity for deviating phi between the two photons)
+- diffmu - makes Fig 19c in SM (fidelity for deviating mu between the two photons)
+- diffOmega - makes Fig 19b in SM (fidelity for deviating Omega between the two photons)
+
+
