@@ -116,3 +116,9 @@ Excel file containing the simulated points of the analytical expression for the 
 Our key rate analysis used the Version 1 of the Open QKD Security package, developed by A. Winick, et al., available at https://github.com/Optical-Quantum-Communication-Theory/ImprovedDecoyStateAndFlagStateSquashingMethods/tree/main/openQKDsecurityV1. Here, we provide the "Presets" and "Protocols" files that we developed for the analysis. These sit on top of and must be used in conjuction with the Open QKD Security package hyperlinked.
 
 -----
+
+### Presets
+
+---
+
+### Protocols
