@@ -1,6 +1,9 @@
 # SurpassingLNTradeOffQKD
 This repository provides code to reproduce the figures and simulations presented in the paper Surpassing the loss-noise robustness trade-off in quantum key distribution by Hannah Seabrook, Emilien Lavie, Teodor Stroemberg, Matthew P Stafford and Giulia Rubino. This README file provides detailed instructions on using the code to reproduce the data and figures in the paper.
 
+
+-----
+## Figures
 -----
 
 ### BellStates.py 
@@ -106,3 +109,10 @@ Excel file containing all the data simulated by the security analysis for varyin
 ### TFQKD_KeyRates.xlsx
 Excel file containing the simulated points of the analytical expression for the key rate of TF-QKD in a lossy channel. Used to add the TF-QKD plot to the loss comparison.
 
+-----
+
+## Key Rate Simulations
+
+-----
+
+https://github.com/Optical-Quantum-Communication-Theory/ImprovedDecoyStateAndFlagStateSquashingMethods/tree/main/openQKDsecurityV1
