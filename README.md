@@ -75,5 +75,30 @@ Produces the figure on collective noise with different noise parameters between 
 
 ### AllKeyRates_SimulatedData.xlsx
 Excel file containing all the data simulated by the security analysis for varying parameters.
+- BB84_loss - BB84 key rate as a function of loss from 0 to 10dB
+- OurProt_loss - our key rate as a function of loss from 0 to 10dB
+- Wang_loss - Wang key rate as a function of loss from 0 to 10dB
+- Boileau3_loss - Boileau 3-photon protocol key rate as a function of loss from 0 to 10dB
+- Boileau4_loss - Boileau 4-photon key rate as a function of loss from 0 to 10dB
+- LiRot_loss - Li rotation-only protocol key rate as a function of loss from 0 to 10dB
+- LiDeph_loss - Li dephasing-only key rate as a function of loss from 0 to 10dB
+- BB84_wide_loss - BB84 key rate as a function of loss from 0 to 70dB
+- Wang_wide_loss - BB84 key rate as a function of loss from 0 to 35dB
+- BB84_theta - BB84 key rate as a function of unitary parameter theta from 0 to pi, with phi=0
+- Wang_theta - Wang key rate as a function of unitary parameter theta from 0 to pi, with phi=0
+- Boileau4_theta - Boileau 4-photon protocol key rate as a function of theta from 0 to pi, with phi=0
+- LiRot_theta - Li rotation-only key rate as a function of theta from 0 to pi, with phi=0
+- LiRot_phi - Li rotation-only key rate as a function of phi from 0 to pi, for different fixed values of theta
+- LiDeph_theta - Li dephasing-only key rate as a function of theta from 0 to pi, with phi=0
+- OurProt_AmpDamp_fine_smallgap - BB84 under an amplitude damping and decoherence channel, arranged as a heatmap array, corresponds to the action of the FBS on our protocol
+- OurProt_AmpDAmp_fine_params - the parameter vectors used for the amplitude damping and decoherence phase
+- BB84_U_coarse_smallgap - BB84 under a unitary operation, arranged as a heatmap array, over the range 0 to 2 pi
+- BB84_U_coarse_params - the parameter vectors used for the theta and phi values
+- BB84_U_fine_smallgap - BB84 under a unitary operation, arranged as a heatmap array, over the range 0 to pi/2
+- BB84_U_fine_params - the parameter vectors used for the theta and phi values
+- Wang_U_coarse - Wang under a unitary operation, arranged as a heatmap array, over the range 0 to 2 pi
+- Wang_U_coarse_params - the parameter vectors used for the theta and phi values
+- Wang_U_fine - Wang under a unitary operation, arranged as a heatmap array, over the range 0 to pi/2
+- Wang_U_fine_params - the parameter vectors used for the theta and phi values
 
 
