@@ -122,10 +122,36 @@ Our key rate analysis used the Version 1 of the Open QKD Security package, devel
 - BB84_asymptotic.m - file for BB84 key rate analysis. The BB84 key rate is analysed using the parameters theta and phi, with loss scaling eta^1. The same file is used for our protocol, using only the parameters eta0 and delta for the amplitude damping and decoherence channel, and loss scaling eta^2.
 - Boileau3_asymptotic.m - file for the key rate analysis of the 3-photon protocol from Boileau et al. (2004).
 - Boileau4_asymptotic.m - file for the key rate analysis of the 4-photon protocol from Boileau et al. (2004).
-- LiDep_asymptotic.m - file for the key rate analysis of the dephasing-only protocol from Li et al. (2008).
-- LiRot_asymptotic.m - file for the key rate analysis of the rotation-only protocol from Li et al. (2008).
+- Li08Dep_asymptotic.m - file for the key rate analysis of the dephasing-only protocol from Li et al. (2008).
+- Li08Rot_asymptotic.m - file for the key rate analysis of the rotation-only protocol from Li et al. (2008).
 - Wang05_asymptotic.m - file for the key rate analysis of the protocol from Wang (2005).
 
 ---
 
 ### Protocols
+
+For the BB84 code (and our protocol):
+- BB84Channel1
+- BB84LossyDescription
+- BB84LossyNoisyChannel
+
+For the Boileau 3-photon code:
+- Boileau3LossyChannel
+- Boileau3LossyDescription
+
+For the Boileau 4-photon code:
+- Boileau4LossyChannel
+- Boileau4LossyDescription
+
+For the Li dephasing-only code:
+- Li08DepLossyChannel
+- Li08DepLossyDescription
+
+For the Li rotation-only code:
+- Li08RotLossyChannel
+- Li08RotLossyDescription
+
+For the Wang code:
+- WangLossyNoisyChannel
+- WangLossyDescription
+
