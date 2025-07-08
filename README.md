@@ -42,7 +42,7 @@ Produces illustration of the effect of FBS noise one a 1D time-bin state (Fig 2 
 ---
 
 ### FBSmodelBitError.py
-Produces figures of the bit error rate of our protocol (Fig 5 in SM).
+Produces figures of the bit error fidelity of our protocol (Fig 5 in SM).
 
 ---
 
@@ -60,19 +60,31 @@ Produces the figure of the time-bin state fidelity under multiple pairs of FBS o
 ---
 
 ### UnequalDispersionModel.py
-Produces the figure on collective noise with different noise parameters between the two photons for the dispersion model.
+Produces the figure on collective noise with different noise parameters between the two photons for the dispersion model with the amplitude damping approximation.
 - keyrate1 - makes Fig 20a in SM (key rate under varying deviations in dispersion noise parameters for n=1)
 - keyrate2 - makes Fig 20b in SM (key rate under varying deviations in dispersion noise parameters for n=2)
 
 ---
 
 ### UnequalFBSmodel.py
-Produces the figure on collective noise with different noise parameters between the two photons for the FBS model.
+Produces the figure on collective noise with different noise parameters between the two photons for the FBS model with the amplitude damping approximation.
 - difftheta - makes Fig 19d in SM (fidelity for deviating theta between the two photons)
 - diffepsilon - makes Fig 19a in SM (fidelity for deviating epsilon between the two photons)
 - diffphi - makes Fig 19e in SM (fidelity for deviating phi between the two photons)
 - diffmu - makes Fig 19c in SM (fidelity for deviating mu between the two photons)
 - diffOmega - makes Fig 19b in SM (fidelity for deviating Omega between the two photons)
+
+
+---
+
+### FBS_KR_Plots.py
+Produces the key rate plots for our protocol under the FBS channel with the two-photon ququart security analysis simulations. (Fig 5)
+
+
+---
+
+### GVDOverlaps.py
+Produces the key rate plots for our protocol under the dispersion channel with the two-photon ququart security analysis simulations, for both linear (Fig S6) and quadratic dispersion (Fig S8), and with unequal dispersion parameters on the two photons (S20).
 
 ---
 
