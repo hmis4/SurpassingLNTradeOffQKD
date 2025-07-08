@@ -79,7 +79,7 @@ Produces the figure on collective noise with different noise parameters between 
 ### AllKeyRates_SimulatedData.xlsx
 Excel file containing all the data simulated by the security analysis for varying parameters.
 - BB84_loss - BB84 key rate as a function of loss from 0 to 10dB
-- OurProt_loss - our key rate as a function of loss from 0 to 10dB
+- OurProt_loss - our key rate as a function of loss from 0 to 10dB with amplitude damping model
 - Wang_loss - Wang key rate as a function of loss from 0 to 10dB
 - Boileau3_loss - Boileau 3-photon protocol key rate as a function of loss from 0 to 10dB
 - Boileau4_loss - Boileau 4-photon key rate as a function of loss from 0 to 10dB
@@ -93,8 +93,8 @@ Excel file containing all the data simulated by the security analysis for varyin
 - LiRot_theta - Li rotation-only key rate as a function of theta from 0 to pi, with phi=0
 - LiRot_phi - Li rotation-only key rate as a function of phi from 0 to pi, for different fixed values of theta
 - LiDeph_theta - Li dephasing-only key rate as a function of theta from 0 to pi, with phi=0
-- OurProt_AmpDamp_fine_smallgap - BB84 under an amplitude damping and decoherence channel, arranged as a heatmap array, corresponds to the action of the FBS on our protocol
-- OurProt_AmpDAmp_fine_params - the parameter vectors used for the amplitude damping and decoherence phase
+- OurProt_AmpDamp_fine_smallgap - BB84 under an amplitude damping and decoherence channel, arranged as a heatmap array, corresponds to the action of the FBS on our protocol, with amplitude damping model
+- OurProt_AmpDAmp_fine_params - the parameter vectors used for the amplitude damping and decoherence phase, with amplitude damping model
 - BB84_U_coarse_smallgap - BB84 under a unitary operation, arranged as a heatmap array, over the range 0 to 2 pi
 - BB84_U_coarse_params - the parameter vectors used for the theta and phi values
 - BB84_U_fine_smallgap - BB84 under a unitary operation, arranged as a heatmap array, over the range 0 to pi/2
@@ -103,6 +103,28 @@ Excel file containing all the data simulated by the security analysis for varyin
 - Wang_U_coarse_params - the parameter vectors used for the theta and phi values
 - Wang_U_fine - Wang under a unitary operation, arranged as a heatmap array, over the range 0 to pi/2
 - Wang_U_fine_params - the parameter vectors used for the theta and phi values
+
+---
+
+### KeyRates_FBSChannel.xlsx
+Excel file containing all the data simulated by the security analysis for varying parameters for our protocol with the FBS model.
+- FBS_theta_sigma_1.1GHz - scan with theta of the FBS channel for epsilon = 6sigma_w and sigma_w = 1.1GHz
+- FBS_theta_sigma_0.5GHz - scan with theta of the FBS channel for epsilon = 6sigma_w and sigma_w = 0.5GHz
+- FBS_theta_sigma_0.1GHz - scan with theta of the FBS channel for epsilon = 6sigma_w and sigma_w = 0.1GHz
+- Loss_only - ideal channel with only loss
+- LossMixed_1.1GHz - scan with loss for the mixed FBS channel for epsilon = 6sigma_w and sigma_w = 1.1GHz
+- LossMixed_0.5GHz - scan with loss for the mixed FBS channel for epsilon = 6sigma_w and sigma_w = 0.5GHz
+- LossMixed_0.1GHz - scan with loss for the mixed FBS channel for epsilon = 6sigma_w and sigma_w = 0.1GHz
+- FBS_1.1GHz_theta_phi_0_pi - 2D scan of theta and phi between 0 and pi for the FBS channel for epsilon = 6sigma_w and sigma_w = 1.1GHz
+- FBS_1.1GHz_theta_phi_0_2pi - 2D scan of theta and phi between 0 and 2pi for the FBS channel for epsilon = 6sigma_w and sigma_w = 1.1GHz
+- FBS_0.5GHz_theta_phi_0_2pi - 2D scan of theta and phi between 0 and 2pi for the FBS channel for epsilon = 6sigma_w and sigma_w = 0.5GHz
+- FBS_0.1GHz_theta_phi_0_2pi - 2D scan of theta and phi between 0 and 2pi for the FBS channel for epsilon = 6sigma_w and sigma_w = 0.1GHz
+
+---
+
+### KeyRates_DispersionChannel_v2.xlsx
+Excel file containing all the data simulated by the security analysis for varying parameters for our protocol with the dispersion model (linear and quadratic).
+
 
 ---
 
@@ -119,12 +141,13 @@ Our key rate analysis used the Version 1 of the Open QKD Security package, devel
 
 ### Presets
 
-- BB84_asymptotic.m - file for BB84 key rate analysis. The BB84 key rate is analysed using the parameters theta and phi, with loss scaling eta^1. The same file is used for our protocol, using only the parameters eta0 and delta for the amplitude damping and decoherence channel, and loss scaling eta^2.
+- BB84_asymptotic.m - file for BB84 key rate analysis. The BB84 key rate is analysed using the parameters theta and phi, with loss scaling eta^1. The same file is used for our protocol with the amplitude damping model, using only the parameters eta0 and delta for the amplitude damping and decoherence channel, and loss scaling eta^2.
 - Boileau3_asymptotic.m - file for the key rate analysis of the 3-photon protocol from Boileau et al. (2004).
 - Boileau4_asymptotic.m - file for the key rate analysis of the 4-photon protocol from Boileau et al. (2004).
 - Li08Dep_asymptotic.m - file for the key rate analysis of the dephasing-only protocol from Li et al. (2008).
 - Li08Rot_asymptotic.m - file for the key rate analysis of the rotation-only protocol from Li et al. (2008).
 - Wang05_asymptotic.m - file for the key rate analysis of the protocol from Wang (2005).
+- OurProt_asymptotic.m - file for the key rate analysis of our protocol using the ququart method of analysing the security.
 
 ---
 
@@ -154,4 +177,17 @@ For the Li rotation-only code:
 For the Wang code:
 - WangLossyNoisyChannel
 - WangLossyDescription
+
+For our protocol with ququart model:
+- OurProt_FBSChannel - FBS channel model
+- OurProt_LinDispChannel - linear dispersion channel model
+- OurProt_LossMixedFBSChannel - lossy channel with mixed FBS channel
+- OurProt_LossyChannel - loss only channel
+- OurProt_LossyDescription
+- OurProt_MixedFBSChannel - mixed channel (Eq(8)) with FBS channel
+- OurProt_MixedLinDispChannel - mixed channel (Eq(8)) with linear dispersion channel
+- OurProt_MixedQuadDispChannel - mixed channel (Eq(8)) with quadratic dispersion channel
+- OurProt_NonCollectiveLinDispChannel - linear dispersion with unequal effect on the two photons
+- OurProt_NonCollectiveQuadDispChannel - quadratic dispersion with unequal effect on the two photons
+- OurProt_QuadDispChannel - quadratic dispersion channel model
 
