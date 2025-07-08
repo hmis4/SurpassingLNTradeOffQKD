@@ -124,7 +124,22 @@ Excel file containing all the data simulated by the security analysis for varyin
 
 ### KeyRates_DispersionChannel_v2.xlsx
 Excel file containing all the data simulated by the security analysis for varying parameters for our protocol with the dispersion model (linear and quadratic).
-
+- LinDisp_1.1GHz_30ps_0.19GHz - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.019THz, sigma_t = 30ps
+- LinDisp_1.1GHz_17ps - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.019THz, sigma_t = 17ps
+- LinDisp_1.1GHz_10ps - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.019THz, sigma_t = 10ps
+- LinDisp_Omega1_0.01THz - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.01THz, sigma_t = 17ps
+- LinDisp_Omega1_0.015THz - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.015THz, sigma_t = 17ps
+- LinDisp_Omega1_0.02THz - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.02THz, sigma_t = 17ps
+- LinDisp_Delta_1ps_sigma_30ps - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.01GHz, sigma_t = 30ps, for unequal dispersion on the two photons, separated by alpha_1 = 1ps
+- LinDisp_Delta_5ps_sigma_30ps - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.01GHz, sigma_t = 30ps, for unequal dispersion on the two photons, separated by alpha_1 = 5ps
+- QuadDisp_1.1GHz_30ps - scan with alpha_12 quadratic dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.019THz, sigma_t = 30ps
+- QuadDisp_1.1GHz_17ps - scan with alpha_2 quadratic dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.019THz, sigma_t = 17ps
+- QuadDisp_1.1GHz_10ps - scan with alpha_2 quadratic dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.019THz, sigma_t = 10ps
+- QuadDisp_Omega1_0.01THz - scan with alpha_2 quadratic dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.01THz, sigma_t = 17ps
+- QuadDisp_Omega1_0.015THz - scan with alpha_2 quadratic dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.015THz, sigma_t = 17ps
+- QuadDisp_Omega1_0.02THz - scan with alpha_2 quadratic dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.02THz, sigma_t = 17ps
+- QuadDisp_Delta_10ps2_sigma_30ps - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.01GHz, sigma_t = 30ps, for unequal dispersion on the two photons, separated by alpha_2 = 10ps^2
+- QuadDisp_Delta_50ps2_sigma_30ps - scan with alpha_1 linear dispersion parameter for sigma_w = 1.1GHz, Omega1 = 0.01GHz, sigma_t = 30ps, for unequal dispersion on the two photons, separated by alpha_2 = 50ps^2
 
 ---
 
